@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://blog.argeluna.com/2021/09/24/Design-a-SDR-Kit/</loc>
-    
-    <lastmod>2021-11-11</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.argeluna.com/2019/04/15/Setup-STM32-Development-Environment/</loc>
     
     <lastmod>2021-11-09</lastmod>
@@ -79,34 +72,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://blog.argeluna.com/tags/SDR/</loc>
-    <lastmod>2021-11-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.argeluna.com/tags/FPGA/</loc>
-    <lastmod>2021-11-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.argeluna.com/tags/board/</loc>
-    <lastmod>2021-11-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.argeluna.com/tags/hardware/</loc>
-    <lastmod>2021-11-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
 
   
