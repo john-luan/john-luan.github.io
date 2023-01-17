@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ADALM-Pluto Quick Start Guide">
+<meta property="og:url" content="https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/index.html">
+<meta property="og:site_name" content="John and Whisper&#39;s Holic">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-29T13:49:13.000Z">
+<meta property="article:modified_time" content="2023-01-17T09:09:27.283Z">
+<meta property="article:author" content="John Luan">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>ADALM-Pluto Quick Start Guide</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/custom_css_source.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2022/05/29/design-a-ZYNQ+AD9361-Dongle/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2022/01/29/%E4%BD%BF%E7%94%A8vivado%E5%92%8Cvitis%E8%BF%9B%E8%A1%8CZYNQ%207000%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&text=ADALM-Pluto Quick Start Guide"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&is_video=false&description=ADALM-Pluto Quick Start Guide"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ADALM-Pluto Quick Start Guide&body=Check out this article: https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&name=ADALM-Pluto Quick Start Guide&description=Here&#39;s something encrypted, password is required to continue reading."><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        ADALM-Pluto Quick Start Guide
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">John and Whisper's Holic</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2022-01-29T13:49:13.000Z" itemprop="datePublished">2022-01-29</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="46dc35ce544d8337bcd706c484727699e5c66d0d7da0fb6f1f5a34635b61e3c7">e84220e5ca76edee9780abd986d8bd91fbf687b42f0d2a0cc57ff8f8f0e1f9fccda88d3f1fc6057aa54c80861ded3afb5583ac7e56fe93f9ff0b32da281e29e50129cb329aa43cd454b55a0d8a6e6eb93f02f51fd7b0c7c5973833ecb99407677c576f8e1026060fda1006d5b9179237cb0d72f28ecb5e6beaee38aba28c3686ee7c73383012d944c2e7dbb8d9dedfc960e41dd8efd04865ffc70ebd11f9dcb76c423b2198b956de658a723d35668314b6ec6df969fd1fbd4a9ce6891cf6847b8321855d971833bebeb19436c00397097ee968a3c2e6be1cbb17b3bf1c31a31ab17645a1b343fbee5454eff1da144c71cb15894f223b9c10c952a202e972ee67fc960ce0c77eae3302c5579dd228cf3d54bc161fe8f8fa8a064e8c46f2a3972bcc022295b9bbb09b245ad1ba292cd411d619d7b2639594e2bde202e52165ead8cece543ac7aec2712ca14c86688dfe689c0d8228e6eb7b9df9751f81247ada0601e2b37f907a1fc459fdceae519a8e1ca05817b1b3e9ccdcc9481c15e3ec095e083e979cde2afae57f7879faaa53044354ea6f1148f4dcf5bc383dd2819b3d6f3623d82df34ceed83e0bbf900a970bd69f99dc7f4747d8580b8241b8abc34738f35369958e7d02bad9d2f5871472296bf1837ad4c45f9f395111abd0f37049673a7a18f90f0b3fa9f2857db41e33aa8c743a25571ee6270a480d6cea7eaf99e2eca619f54699698882bdc8b7d79ce53b30f553a8bbb6bc7d1dba6e5eee01abdc39c796ca40170443728c5181414713c8481a0a7babb40349a37e9f29245c33d35a634e9d81ecbc7ab3734dbfc812f48dbc842a1cf1bbeb049470ddadf7c244fb57bfe7e9da7b35bb50c9b16f07a2aa4f9ccbbc60bab4540db859213b19fd97dbcca066d81a976ba5f92456db024560587540a7488bda69022c17408cc8a6b58dd42214dd466787ff41c51e6d3daf9e4e850fdbd93a9180367fddcc3d4d1ad3b494243d9c4a4335e3f7467612ca02ed8ef3ae868804b85b593419774df6ce858c466f24b31d0160639fdefe84589e290d1fa1fe855bb8b75fc89ad2068ea5ced254f37ea6feb31adf14ffaf88abafa4fd064634eefa0e82bb5a43cc9e22445245bd87523651eb94385cc99705391834c8800c3aed03eada905ae6a30a5176e6789358ad90c84d9fc8e0546e277fb3d8c720163db39cedc6461340b9efaadab19d0deb9572507633b46c9007cfbed6c912b3eee8404c573fba5d64afe79e481faff6e95d0f04fd0a63483bc53b01a19e01b114004137fb6f6ba56f05c1682e04cc27b4d80847c8babe03e376206742516738e8ae9941cc3d66e37a617101d03d02ff60987d34b15bbd958bbbbb0820d685801009f3133e2baf62c9a54d83d61beff05ca1dcb8b7deb7e41b183ace5642eb387dd89636d4ba92d0b38e742efdfc308674f600d300597ead9d4a8842e5495eff6c33ad2e945d4909ab18af0b6aa03e04f2aac22c9944d876031839414032fd7869d7f7a32feabcf4f71139636d721dac508e5a3da964773f424e2fb9924330bc2e252042848d5eb2e8ca45f7de7b0b266d1df73ad6af07dc95ce7e27485af45b2dcded34935f2423aa27c35b5c9b14f9cb6042ee98a9d4366a3c8fac5f1b3bb473d3a6b38f993450ed6c5112682e79c01f9ce9f075af203317710c53959bc545bc3adc6264d49704130705413264571a32531b2a4e59b408e04855f04185b5c9ad3afe2957f8bfcce0513cb63d86ce663ca2bb7e1af2a24f72ac246e36f60ecbb8c1df2a97eab1c04817eb96cdaee135dd11dfb9dcd572a7d658317a0c3221678003f2fdce7b6fbd47dff526fc3ff6f333f06e6742cc955f33055b4f8414367d31d4496a0fa4b0097a35dea9f7689480d9800acb0c90202feb284fc49777510730f3024f23b671558ca8d1cc897d71a2a93fe1551d6db5765fcdf6dbf161f8f4cea58ca2b9bc46f7dc8ace83b4d189e9ccaf26fa8cf4d2169eeaf9f0378403889c381f869c67394166b3801b479d4037911526e1a859dd37ed1510aca4216e53a3c52cc32c85bada68f70a8f0c3d5ff79c4442d3ee65f338a6b859e8dc65047b27eaed02834c1ea9c07b202352c46f44086a86139158e4de144a775287e5285c3d3e75caed68c1165facc07e6f1fdbb1738c52d55fa3a86c88a89c0e66c8f7b97b4170e4724eb7f8f61a9eff6a8542b6f03d30cb6287f3bdee538f448e6eface8d9e0ba7fa8e54e55595767531071218989bd9bb9fd64caccb875dc95991755356ccb33dc8fe46696979d9e5e795e01b2694e742dad4ec10dd6567766bf4c9d0aa8c16c8589dea36aff95ec712fd1aa0d23844abe40b2d1acc49ae1414c0a3e37868835b61746aa5a0e51067e352661c4da59d7916d86a246161ab82e5acf2469304730bc40857012edc82f24c150d1a0e787923ead1612370b6cd9431857ff29031445b36ada4727d6de2552e3f623cca604f7b2f8aa5a7a9368d7382d60afca491de9be4b7eed2036816a42bbbe197609f409bf0930151a9e4296e7c86c2bdd75f1618322b1b448ef9a122baea1bdb78ed7a235e0bd55ff12178821be64aa5f079cf05b33700a311657dda934d52d299fc234543a656976dee61e2fa3bfba038a334e82645cde1ea230e5b7373be8e816ad11a1cc5bdad1ae82bcbddccfd8b14706787dac78ff4dd42db4c7d2c40943c9cb92105630c076d3a5ecbd10e00c94ef8d58e0223b20802b70f6d0287d1fe08270663565a8016abe8c01e1789fb9566824804b03928492fd2b5c479534b7839365013c848bde3ee647b7b5d961aa9145c5391d50a56bc6a5b347acc78c84fef2a5204fc171a6a6fc369e4fdd61da97e1e82fa89d6577cd8a2fd3c89f6e3788ff5ba372fd60e4696eca55133f2447b6f12bf6c88dd4c527cab7539935e33569f1f88675aa61e2eb40d8cde3ce710cbc5e176324211640c6b9fb4f52719ad371a222acd51c05acfeb75c54adbc4bf225b9df917c3a228e2021c296ac93a8ce1add89ca71808dec23f7bff26bd29488e4e4f5b36a041173c53cb071985537d5c7f4e804ca6cb08e8389eb9c1ecd449dcb2aaa9b6fa4d8f63f03204d1b47a8472e69c27c95936a0f0e5cd1bda6f6bd1649d984b301838275a6f7d3290ec6875d69e1380c80b4b45c2f5173671697d002fe08569cbbd30094268fc192b7bfeb6b974bd4cafea72b5976ce9705d70ca22161b1d1f5e016c71e9743f4bfa26f1043b7d32def5a2ff1629ef031d475e1cad5a1aa114d9bb7f1ae2acc82f72dfc5beafa14e3610ec6ad1a67fb5c321b966204778f3ead06a6a10a9bde3704e58115d4826c9ff9f707e050c0798aea24107f3edf5a46a0a36a26db1ebd54faf48c27149f6c08b25dd00c2d389891c5b3a24c6ed1f7340a56d85dc7d0e2911ef5453ae65518b981173f122cc4677ebb00ab269dd750ca9280f07a58f1f04abd86282f032678b8087f5aef3f865c5347900a1cf15705651878b8b5e9209e0f2ac8ef7660a2a93037ab3fc42b04e2df60a93399529c71f8af1035800dc4dcd92383656fe0fb69328026a6ca4fffc2990ba914edba5b982d4eb3854945dc2ae7e809cbef8176fcf94b8f660ebf754e26148406c190099007ed1ab0e6c7a6ee7ec2770d89fad56f3716e00116cecdfe28218e4420dc8da6a1b61c3ec4ed13b6497e3cfc92f7f9fe110226781e217ae10ba13d262701af6ba34e3f74d81728565bbd36e404dd4b9e7d30d03030aad568c69afd17a0848ff8202c66c6d0fe3d2a1484bcc5dddd8bf00d83e3511210d569763079363a410b2dc6f5cdba102145696342bd61bc4cb7e0aa6399ab8ded5796c4e774ec27367502f85af46f9106cab706ee86281b59652f8f0f57771163fccc9bbb2dcece4d7f2249b9b35226e36a10185335ab5d6eda3bdaf30aaac5255e2df4fd236aa569eb2d327c7978ad2d2235a95b16b7c4f587ad3f1037b1b59f75cff56d4d305638a8770c6df734c49c0b4107950509b5c471a9bf6bcfc5f5b0fcfd2748905acee8414a8d5fba321e677f9bf54e1189427aab46d63fb92d0003e4447add640c5ba875e5309675d13ca6f411c5a6854477c18332c3a64119277d40b6cf1ad976106d65106698abc3f70c86bed197c9bfeef53786377a0634747e6774a23fb5d644f98d9acbf34792ad09ae38885076c0f8bb96074106936227366efd598dcafe8996c0c4474c89500fc6e04819f2c9298cd49be33f61ec5d4bee2719c97bf92c98b6b8581eb7ca9584a9fcd059240132f1da30bb15d9c0c216f2a5a8a73403f9f2f9b2ff56594862df6e439e90cc18ab5fdc7ce15f5f6bdc4a59af01d994b219cb490fac561964e3b67762658b50228c51b95f2b3dd1505b99488c3840364bd5f4a263832f0e21b045b9175cd1150bea4b82267dfb20a239600de12180d2615da907cc9aa9c9fddc342c66e71d4e4d31d857d043ac569e037410373acc955602f263692b1a0eb40a6393dd8658a6c12255a1d3a83bfff8371376d61c55b2696509eb82afe945aee393d1f982167993fc761cd38ae8f949ab41b7dde4b8b1f14eab3a16c05d192362b54c3491a32a6f602c6f19d09962d8eb5093fcceb7bb9b4a78ed2c8f8f757f98175104ec960c318c4f49b998caed543d869a56ab9e6899d8c44c3e428536c486d3d3982d7a70ba4f87ca5a0058edaf028674c90cfd4da86d03911fe1cc58a1d3a7c2e8f1f19f9ab2b627f2134b8485dbdd6a2f79eebd1fecf777d25ca5f5c86e2379f58f06447492239a0f78ff93721c7369b4f6468e3c6ee93b5f34a2e08d12d9d92f1d69244acb5b887c89d714c26831a7f95c1f709c1ccd9e90f71233f137ca8b68cd7866643aae31bb461ed000c0bbf1142226a5f0f730bcb7cb51e09becbe64bc0381e23b194f370da4034283ab33f53888f9a84c3c761f181363595963cebd24d741d571e964bddd7eb0ec7acc3d804a59b55ff12d1473e81a49dddb92501ae9384e4bfd1eee6ce3380ece2597e5a02d2dec9386dd33ede7f93b4bdca9ff061cd1927375166fcb15346f5876f0a2d557a5df16b16293982fdd9410dc8e8bd51ce0ead68128656896dff66789c25d2c786158e9d9ac7f2b8586186c9f62a08970d450d6eb0fb32da73ca7b4b14f9526309ee341c7d1d80edc55607612cda204fbd7404657e491570ecd8dac81e532d1ba2efa47792101d3b0d5e5bbab03e5f87db12dae3080b2f2a09af8ef0034430fd0b7730ae6a9cbb4e311ab226c236b76ef8855b1638a5a0</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&text=ADALM-Pluto Quick Start Guide"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&is_video=false&description=ADALM-Pluto Quick Start Guide"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ADALM-Pluto Quick Start Guide&body=Check out this article: https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&title=ADALM-Pluto Quick Start Guide"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://blog.argeluna.com/2022/01/29/ADALM-Pluto%20Quick%20Start%20Guide/&name=ADALM-Pluto Quick Start Guide&description=Here&#39;s something encrypted, password is required to continue reading."><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 John Luan
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
